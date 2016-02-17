@@ -5,6 +5,8 @@ import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
+import javafx.collections.ObservableList;
+
 public class ModelTest {
 	
 	@Test
@@ -14,8 +16,11 @@ public class ModelTest {
 		model.add("ccc");
 		model.add("aaa");
 		
-		String[] items = (String[]) model.items().toArray();
+		// Items
+		ObservableList<String> observableList = model.items();
+		String[] items = observableList.toArray(new String[observableList.size()]);
 		
+		// Copy items and sort them
 		String[] orderedItems = new String[items.length];
 		System.arraycopy(items, 0, orderedItems, 0, items.length);
 		Arrays.sort(orderedItems);
