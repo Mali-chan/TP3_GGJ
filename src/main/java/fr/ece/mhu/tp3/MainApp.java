@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 public class MainApp extends Application {
 	
 	private static final String APP_TITLE = "MainApp";
+	private static final String FXML_LIST_VIEW = "view/ListView.fxml";
 	
 	private Stage primaryStage;
 
@@ -29,14 +30,14 @@ public class MainApp extends Application {
 	
 	private void showListView() {
 		FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(MainApp.class.getResource("view/ListView.fxml"));
+        loader.setLocation(MainApp.class.getResource(FXML_LIST_VIEW));
         
         try {
 			AnchorPane listView = (AnchorPane) loader.load();
 			Scene scene = new Scene(listView);
 			primaryStage.setScene(scene);
 		} catch (IOException e) {
-			System.err.println("Error while loading view/ListView.fxml");
+			System.err.println("Error while loading " + FXML_LIST_VIEW);
 		}
 	}
 
