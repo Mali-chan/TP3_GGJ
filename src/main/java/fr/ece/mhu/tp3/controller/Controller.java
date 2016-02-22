@@ -6,14 +6,20 @@ import javafx.scene.control.ListView;
 
 public class Controller {
 	
-	@FXML
 	private Model model;
 	
 	@FXML
 	private ListView<String> listView;
 	
-	public Controller(Model model) {
-		this.model = model;
+	public Controller() {
+		model = new Model();
+		model.add("Doc");
+		model.add("Dopey");
+		model.add("Bashful");
+		model.add("Grumpy");
+		model.add("Sneezy");
+		model.add("Sleepy");
+		model.add("Happy");
 	}
 	
 	@FXML
