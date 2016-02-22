@@ -1,5 +1,13 @@
 apply plugin: 'java'
 
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.4'
+}
+
 jar {
     manifest {
         attributes 'Main-Class': 'fr.ece.mhu.tp3.HelloWorld'
