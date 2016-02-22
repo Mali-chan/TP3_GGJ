@@ -1,6 +1,6 @@
 package fr.ece.mhu.tp3.controller;
 
-import fr.ece.mhu.tp3.Model;
+import fr.ece.mhu.tp3.model.Model;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 

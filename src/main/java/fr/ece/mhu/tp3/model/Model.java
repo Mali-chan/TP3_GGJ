@@ -1,4 +1,4 @@
-package fr.ece.mhu.tp3;
+package fr.ece.mhu.tp3.model;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

@@ -5,6 +5,7 @@ import java.util.Arrays;
 import org.junit.Assert;
 import org.junit.Test;
 
+import fr.ece.mhu.tp3.model.Model;
 import javafx.collections.ObservableList;
 
 public class ModelTest {
